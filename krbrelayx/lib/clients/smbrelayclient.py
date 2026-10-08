@@ -16,7 +16,7 @@
 
 from socket import error as socketerror
 from impacket import LOG
-from lib.clients import ProtocolClient
+from krbrelayx.lib.clients import ProtocolClient
 from impacket.examples.ntlmrelayx.servers.socksserver import KEEP_ALIVE_TIMER
 from impacket.nt_errors import STATUS_SUCCESS
 from impacket.smb import SMB, SMBCommand, SMBSessionSetupAndX_Extended_Parameters, \

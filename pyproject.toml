@@ -1,0 +1,21 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "krbrelayx"
+version = "0.1.0"
+description = "Toolbox for abusing unconstrained Kerberos delegation and DNS administration via LDAP"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "impacket",
+    "ldap3",
+    "dnspython",
+]
+
+[project.scripts]
+krbrelayx = "krbrelayx.krbrelayx:main"
+addspn = "krbrelayx.addspn:main"
+dnstool = "krbrelayx.dnstool:main"
+printerbug = "krbrelayx.printerbug:main"

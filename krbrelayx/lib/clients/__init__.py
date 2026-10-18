@@ -77,7 +77,7 @@ class ProtocolClient:
         # Charged of keeping connection alive
         raise RuntimeError('Virtual Function')
 
-clients_dir = files('lib').joinpath('clients')
+clients_dir = files(__package__)
 for file in clients_dir.iterdir():
     if file.name.find('__') >=0 or os.path.splitext(file.name)[1] == '.pyc':
         continue
